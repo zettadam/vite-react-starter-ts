@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-    <testsuite name="src/shell/__tests__/App.test.jsx" timestamp="2022-04-06T17:00:42.153Z" hostname="DESKTOP-ADAM" tests="1" failures="0" errors="0" skipped="0" time="0.0145111000">
-        <testcase classname="src/shell/__tests__/App.test.jsx" name="App &gt; loads the main page" time="0.0137722000">
-        </testcase>
-    </testsuite>
-</testsuites>

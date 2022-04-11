@@ -12,8 +12,8 @@
 *~
 
 .cert/
-**/node_modules
-app/build
-app/coverage
-app/dist
-app/logs
+/build
+/coverage
+/dist
+/logs
+/node_modules
