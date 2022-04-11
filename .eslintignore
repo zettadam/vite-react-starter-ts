@@ -1,0 +1,11 @@
+*.css
+*.gif
+*.ico
+*.jpg
+*.png
+
+build/
+coverage/
+dist/
+node_modules/
+reports/
