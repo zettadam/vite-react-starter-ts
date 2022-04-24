@@ -8,6 +8,6 @@ describe('App', () => {
     render(<App />)
 
     expect(screen.getByText(/React Starter \(Vite\)/))
-    expect(screen.getByText(/© CAE 2022/))
+    expect(screen.getByText(/© Company 2022/))
   })
 })
