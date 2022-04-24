@@ -1,6 +1,10 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+
 import fs from 'fs'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+
+const unitTestsExclude = ['coverage', 'node_modules', 'reports']
 
 function useHttps() {
   let https = false
@@ -29,8 +33,9 @@ export default defineConfig({
       src: ['src'],
       exclude: ['**.config.js', '**/__tests__'],
     },
-    globals: true,
     environment: 'happy-dom',
+    exclude: [...unitTestsExclude, 'tests'],
+    globals: true,
     reporters: ['default', 'junit'],
     outputFile: './reports/junit.xml',
   },

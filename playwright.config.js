@@ -1,5 +1,5 @@
 // @ts-check
-const { devices } = require('@playwright/test')
+// const { devices } = require('@playwright/test')
 
 const baseURL = 'http://127.0.0.1:3000'
 
@@ -41,7 +41,8 @@ const config = {
     //   name: 'Mobile Safari',
     //   use: devices['iPhone 12'],
     // }
-  ]
+  ],
+  testDir: './tests',
 }
 
 module.exports = config
