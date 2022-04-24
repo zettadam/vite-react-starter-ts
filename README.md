@@ -27,7 +27,7 @@ Assuming that everything went well, you're almost ready to start.
 
 ### End-to-end framework
 
-Each version of Playwright framework requires specific versions of browsers installed. Run this command (assuming you are in `e2e` directory) to install supported browsers:
+Each version of Playwright framework requires specific versions of browsers installed. Run this command to install supported browsers:
 
 ```sh
 npx playwright install

@@ -4,7 +4,14 @@ import fs from 'fs'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const unitTestsExclude = ['coverage', 'node_modules', 'reports']
+const unitTestsExclude = [
+  'build',
+  'coverage',
+  'dist',
+  'node_modules',
+  'public',
+  'reports',
+]
 
 function useHttps() {
   let https = false
