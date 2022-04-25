@@ -40,7 +40,7 @@ export default defineConfig({
       src: ['src'],
       exclude: ['**.config.js', '**/__tests__'],
     },
-    environment: 'jsom',
+    environment: 'jsdom',
     exclude: [...unitTestsExclude, 'tests'],
     globals: true,
     reporters: ['default', 'junit'],
