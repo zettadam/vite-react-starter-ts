@@ -1,0 +1,19 @@
+.app-header {
+  margin-block-end: var(--size-4);
+}
+.app-footer {
+  margin-block-start: var(--size-8);
+}
+
+.color-palette {
+  display: flex;
+  flex: column wrap;
+  gap: 1rem;
+}
+.color-palette > div {
+  padding: var(--size-1) var(--size-2);
+}
+
+p {
+  margin-block-end: var(--size-4);
+}
