@@ -6,7 +6,6 @@
   },
   "extends": [
     "eslint:recommended",
-    "prettier",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
@@ -19,10 +18,9 @@
       "jsx": true
     }
   },
-  "plugins": ["prettier", "react", "react-hooks", "sonarjs"],
+  "plugins": ["react", "react-hooks", "sonarjs"],
   "rules": {
     "no-unused-vars": "warn",
-    "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
   },
