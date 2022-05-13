@@ -1,4 +1,5 @@
-/* eslint-disable react-hooks/rules-of-hooks */
+/// <reference types="vitest" />
+/// <reference types="vite/client" />
 
 import fs from 'fs'
 import { defineConfig } from 'vite'
@@ -13,17 +14,16 @@ const unitTestsExclude = [
   'reports',
 ]
 
+/* eslint-disable react-hooks/rules-of-hooks */
 function useHttps() {
-  let https = false
+  let https: object = {}
 
   try {
     https = {
       key: fs.readFileSync('../.cert/key.pem'),
       cert: fs.readFileSync('../.cert/cert.pem'),
     }
-  } catch (e) {
-    https = false
-  }
+  } catch (e) {}
 
   return https
 }
@@ -38,12 +38,13 @@ export default defineConfig({
     coverage: {
       all: true,
       src: ['src'],
-      exclude: ['**.config.js', '**/__tests__'],
+      exclude: ['**.config.js', '**.d.ts', '**/__tests__'],
     },
     environment: 'jsdom',
     exclude: [...unitTestsExclude, 'tests'],
     globals: true,
     reporters: ['default', 'junit'],
     outputFile: './reports/junit.xml',
+    setupFiles: './vitest.setup.ts',
   },
 })

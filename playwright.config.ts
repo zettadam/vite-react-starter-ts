@@ -1,10 +1,10 @@
-// @ts-check
+import { PlaywrightTestConfig } from '@playwright/test'
+
 // const { devices } = require('@playwright/test')
 
-const baseURL = 'http://127.0.0.1:3000'
+const baseURL: string = 'http://127.0.0.1:3000'
 
-/** @type {import('@playwright/test').PlaywrightTestConfig} */
-const config = {
+const config: PlaywrightTestConfig = {
   use: {
     baseURL,
     headless: true,
@@ -45,4 +45,4 @@ const config = {
   testDir: './tests',
 }
 
-module.exports = config
+export default config
