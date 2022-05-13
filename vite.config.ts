@@ -38,7 +38,7 @@ export default defineConfig({
     coverage: {
       all: true,
       src: ['src'],
-      exclude: ['**.config.js', '**.d.ts', '**/__tests__'],
+      exclude: ['**.config.js', 'vitest.setup.ts', '**.d.ts', '**/__tests__'],
     },
     environment: 'jsdom',
     exclude: [...unitTestsExclude, 'tests'],
