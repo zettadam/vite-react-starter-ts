@@ -39,7 +39,6 @@
     "eslint-plugin-sonarjs": "^0.13.0",
     "jsdom": "latest",
     "lint-staged": "^12.4.0",
-    "postcss": "^8.4.13",
     "postcss-preset-env": "^7.5.0",
     "prettier": "^2.6.1",
     "ts-node": "^10.7.0",
@@ -52,5 +51,12 @@
       "npm run prettier:fix",
       "npm run lint"
     ]
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "postcss"
+      ]
+    }
   }
 }
